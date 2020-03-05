@@ -1,0 +1,41 @@
+<div class="contianer-fluid">
+  <div class="row">
+    <div class="col  fixed-top">
+      <nav class="navbar navbar-expand-sm bg-lightnavbar-light "
+        style="background-color:gray;height: 50px;width:2000px;">
+        <a class="navbar-brand" href="#">
+          <img src="assets\car.jpg" alt="logo" style="width:90px;">
+        </a>
+        <ul class="navbar-nav justify-content-center" style="text-align:center">
+          <li class="nav-item text-darkt">
+            <span style="text-align: center">CARSPRAC</span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="sidebar ">
+        <a href="#home "><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#services"><i class="fa fa-fw fa-wrench"></i> Services</a>
+        <a href="#clients"><i class="fa fa-fw fa-user"></i> Clients</a>
+        <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href="#contact"><i class="fa  fa-fw fa-history"></i>Booking List</a>
+        <a href="#about"><i class="fa fa-fw fa-wrench"></i>Order Status</a>
+
+        <a routerLink="editprofile"><i class="fa fa-fw fa-user" aria-hidden="true"></i>Edit Profile</a>
+        <a routerLink="chagepassword"><i class="fa fa-fw fa-key" aria-hidden="true"></i>Change Password</a>
+
+
+
+      </div>
+    </div>
+
+
+    <div class="col-sm-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

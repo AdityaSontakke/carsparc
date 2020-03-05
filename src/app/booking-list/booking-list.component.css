@@ -1,0 +1,99 @@
+.image{
+    /* height:40em;  */
+     /* //height:70em;  
+    height:60em; */
+    background-size:cover;
+    width:auto;
+    background-image: url('/assets/background.jpg');
+
+   
+    background-position:50% 50%;
+}
+.card{
+    border:2px solid white;
+    /* margin-top: 0px; */
+    /* position: sticky;
+    
+     
+    margin-bottom: 30px; */
+    border-radius: 20px;
+     /* margin-top: 100px; */
+     padding: 20px 20px; 
+     /* margin-bottom: 100px;
+     margin-top: 80px;
+     margin-left:-10px; */
+
+    
+    
+         box-shadow: -10px 3px 28px 10px rgba(0,0,0,0.75);
+-webkit-box-shadow: -10px 3px 28px 10px rgba(0,0,0,0.75);
+-moz-box-shadow: -10px 3px 28px 10px rgba(0,0,0,0.75);
+        
+                   
+        
+}
+img{
+    width:100px;
+    margin:auto;
+
+}
+
+h1{
+    color:white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.myinputcss{
+    border-radius: 10px;
+    /* margin-top:100px; */
+    /* margin-top:10px; */
+}
+
+.mynavbar{
+margin-left: 20px;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    width: 1000px;
+   
+    position: fixed;
+    height: 100%;
+    overflow: auto; 
+}
+.buttonCancelUpdate{
+    border-radius:30px;
+    /* margin-top: 10px; 
+    padding-block:20px;
+    margin-top:30px;
+    text-align: center;*/
+    padding-bottom:30px;
+   
+    
+    
+    width:70px;
+    height:30px;
+}
+.mytable{
+    border-radius: 20px;
+    padding:15px 10px;
+    margin-top: 30px;
+    display: inline-block;
+    font-size: small;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    /* table-layout: fixed; */
+    
+}
+
+nav{
+    height:43px;
+    width:490px;
+    border-radius: 10px;
+    margin-top:1px;
+    margin-left:2px;
+    margin-right:25x;
+    background-color:skyblue
+}

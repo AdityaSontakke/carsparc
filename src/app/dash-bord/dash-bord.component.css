@@ -1,0 +1,51 @@
+/* body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+} */
+
+.image{
+  /* height:40em; 
+ height:60em; */
+ background-size:cover;
+ width:auto;
+
+
+ background-image: url('/assets/background.jpg');
+ 
+
+
+
+ background-position:50% 50%;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  background-color: #f1f1f1!important;
+ margin-top: 80px;
+  overflow: auto;
+  position: fixed;
+  height:100%;
+}
+
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color:palevioletred;
+  color: white;
+}
+
+

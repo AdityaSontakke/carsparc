@@ -1,0 +1,179 @@
+<div class="container-fluid ">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="card flex-fill image"style="width:450px">
+          <!-- style="height: 1200px;" -->
+        
+
+          <!-- <h1 class="">Booking For Maintenance /Wash</h1>  -->
+        
+        <div class="card-body">
+          <!-- {{BookWashModel.value|json}} -->
+          <h1 class="text-center"></h1>
+          <form action="" [formGroup]="BookWashModel">
+            
+            
+
+            <div class="form-group input-group-lg col-ms-12">
+              <label for="vehicleName/Model"></label>
+              <input type="text" id="vehicleName/Model" class="form-control myinputcss" 
+                placeholder="Vehicle Name/Model" formControlName="vechiclename">
+
+                <div class="validation" *ngIf="BookWashModel.controls['vechiclename'].hasError('required')
+                && (BookWashModel.controls['vechiclename'].touched||BookWashModel.controls['vechiclename'].dirty)">
+                <b>This field is requried</b>
+              </div> 
+              <!-- <div class="validation" *ngIf="formsubmit && BookWashModel.get('vechiclename').hasError('required') ">
+
+                  <div class="validation" *ngIf="BookWashModel.controls['vechiclename'].hasError('required')
+                    || (BookWashModel.controls['vechiclename'].touched||BookWashModel.controls['vechiclename'].dirty)">
+                          <b>This Field is requried</b>
+                  </div> 
+                </div> -->
+            </div>
+
+            <div class="form-group input-group-lg " style="margin-top: 40px;" >
+              <!-- <div class="col-sm-5"></div> -->
+              <select id="vechicle-type" class=" alert form-rounded form-control myinputcss col-sm-12 form-control-lg"
+                placeholder="Vehicle Type" formControlName="vehicletype">
+                <option value="">Vehicle Type</option>
+                <option value="2-wheeler">2 Wheeler</option>
+
+                <option value="3-wheeler">3 Wheeler</option>
+                <option value="4-wheeler">4 Wheeler</option>
+                <option value="6-wheeler">6 Wheeler</option>
+                <option value="cancel">Cancel</option>
+
+              </select>
+              <div class="validation" *ngIf="BookWashModel.controls['vehicletype'].hasError('required')
+              && (BookWashModel.controls['vehicletype'].touched||BookWashModel.controls['vehicletype'].dirty)">
+              <b>This field is requried</b>
+              </div> 
+            </div>
+
+            <div class="form-group input-group-lg">
+              <label for="contactperson"></label>
+              <input type="text" id="contactperson" class="form-control myinputcss" placeholder="Contact Person"
+                formControlName="name">
+                
+                <div class="validation" *ngIf="BookWashModel.controls['name'].hasError('required')
+              && (BookWashModel.controls['name'].touched||BookWashModel.controls['name'].dirty)">
+              <b>This field is requried</b>
+              </div> 
+
+            </div>
+            <div class="form-group input-group-lg">
+              <label for="contactdetails"></label>
+              <input type="text" id="contactdetails" class="form-control myinputcss" placeholder="Contact Details"
+                formControlName="mobileno">
+
+                  
+                <div class="validation" *ngIf="BookWashModel.controls['mobileno'].hasError('required')
+              && (BookWashModel.controls['mobileno'].touched||BookWashModel.controls['mobileno'].dirty)">
+              <b>This field is requried</b>
+              </div> 
+              <div class="validation" *ngIf="BookWashModel.controls['mobileno'].hasError('pattern')"><b>Invalid mobileNumber</b></div>
+
+            </div>
+            <div class="form-group input-group-lg"style="margin-top: 40px;">
+              <div class="col-sm-5"></div>
+              <select id="inputState" class=" alert form-rounded form-control myinputcss col-sm-12 form-control-lg"
+                placeholder="Vehicle Type" formControlName="servicetype">
+                <option value="">Select Service Type</option>
+                <option value="washing">wash</option>
+
+                <option value="maintenance">Maintenance</option>
+                <option value="wash">Wash/Maintenance</option>
+                <option value="others">Other</option>
+                <option value="cancel">Cancel</option>
+
+              </select>
+              <div class="validation" *ngIf="BookWashModel.controls['servicetype'].hasError('required')
+                && (BookWashModel.controls['servicetype'].touched||BookWashModel.controls['servicetype'].dirty)">
+                <b>This field is requried</b>
+                </div> 
+
+            </div>
+
+            <div class="form-group input-group-lg"style="margin-top: 40px;">
+              <div class="col-sm-5"></div>
+              <textarea class=" alert form-rounded form-control col-sm-12" rows="2" id="comment"
+                placeholder="Requirements/Description*" formControlName="requiredDescription"></textarea>
+
+                <div class="validation" *ngIf="BookWashModel.controls['requiredDescription'].hasError('required')
+                && (BookWashModel.controls['requiredDescription'].touched||BookWashModel.controls['requiredDescription'].dirty)">
+                <b>This field is requried</b>
+                </div> 
+
+            </div>
+
+            <div class="form-group input-group-lg">
+              <label for="arealocation"></label>
+              <input type="text" id="arealocation" class="form-control myinputcss" placeholder="Area Location"
+                formControlName="arealocation">
+
+                <div class="validation" *ngIf="BookWashModel.controls['arealocation'].hasError('required')
+                && (BookWashModel.controls['arealocation'].touched||BookWashModel.controls['arealocation'].dirty)">
+                <b>This field is requried</b>
+                </div> 
+
+            </div>
+            <div>
+              <label for="pickup" class="col-sm-5 alert-link mx-xl-n2 myinputcss" style="color: aliceblue;">Need
+                Pick-up</label>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="customRadio" value="Yes"
+                  formControlName="needpickup">
+                <label class="custom-control-label" for="customRadio">Yes</label>
+
+              </div>
+
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="customRadio2" value="No"
+                  formControlName="needpickup">
+                <label class="custom-control-label" for="customRadio2">No</label>
+              </div>
+            </div>
+
+            <div class="form-group input-group-lg">
+              <div class="form-group col-sm-3"></div>
+              <input type="date" name="pickupdate" placeholder="Pick-up-Date"
+                class="alert form-rounded form-control col-sm-12" formControlName="pickupdate">
+
+                <div class="validation" *ngIf="BookWashModel.controls['pickupdate'].hasError('required')
+                && (BookWashModel.controls['pickupdate'].touched||BookWashModel.controls['pickupdate'].dirty)">
+                <b>This field is requried</b>
+                </div> 
+            </div>
+
+            <div class="form-group input-group-lg">
+              <label for="budprice"></label>
+              <input type="text" id="budprice" class="form-control myinputcss" placeholder="Budget Price"
+                formControlName="budgetprice">
+
+                <div class="validation" *ngIf="BookWashModel.controls['budgetprice'].hasError('required')
+                && (BookWashModel.controls['budgetprice'].touched||BookWashModel.controls['budgetprice'].dirty)">
+                <b>This field is requried</b>
+                </div>
+                
+                <div class="validation" *ngIf="BookWashModel.controls['budgetprice'].hasError('pattern')"><b>Invalid pincode</b></div>
+
+
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary buttonCancelUpdate" 
+                (click)="BookForWashAction(BookWashModel.value)"[disabled]="!BookWashModel.valid">Submit</button>
+              <button type="reset" class="btn btn-danger buttonCancelUpdate">Cancel</button>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="col-md-4">
+
+
+        </div>
+      </div>
+    </div>
+  </div>

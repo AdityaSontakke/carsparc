@@ -1,0 +1,112 @@
+<div class="container-fluid image">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+
+            <!-- <h5 style="color: white">{{signupModel.value|json}}</h5> -->
+            <form action="" [formGroup]="signupModel">
+
+                <div class="card image" >
+                    <div class="card-body">
+                        <h1 class="text-center" style="color:white">Sign-up</h1>
+                        
+
+                        <div class="form-group input-group-lg">
+                            <label for="uname"></label>
+                            <input type="text" id="uname" class="form-control" placeholder="Name"
+                                formControlName="name">
+
+                               
+                                    <!-- <div class="Validations"
+                                    *ngIf="FlagFormsubmited && signupModel.get('name').hasError('required')">
+                                    <div class="Validations" *ngIf="signupModel.controls['name'].hasError('required')
+                                         || (signupModel.controls['name'].touched)">
+                                        <b>Name is requird</b>
+                                    </div>
+                                </div> -->
+                                <div class="validation" *ngIf="signupModel.controls['name'].hasError('required')
+                                && (signupModel.controls['name'].touched||signupModel.controls['name'].dirty)">
+                                <b>This Field is requried</b>
+                            </div>
+                            <div class="validation" *ngIf="signupModel.controls['name'].hasError('pattern')">
+                                <b>Invalid contact number</b>
+                            </div>  
+            
+
+
+                               
+                        </div>
+
+                        <div class="form-group input-group-lg">
+                            <label for="umobile"></label>
+                            <input type="text" id="umobile" class="form-control" placeholder="Mobile No"
+                                formControlName="mobileno">
+                            <!--validation-->
+                                <div class="validation" *ngIf="signupModel.controls['mobileno'].hasError('required')
+                                && (signupModel.controls['mobileno'].touched||signupModel.controls['mobileno'].dirty)">
+                                <b>This Field is requried</b>
+                            </div>
+                            <div class="validation" *ngIf="signupModel.controls['mobileno'].hasError('pattern')">
+                                <b>Invalid contact number</b>
+                            </div>  
+                        </div>
+
+                        <div class="form-group input-group-lg ">
+                            <label for="uemail"></label>
+                            <input type="text" id="uname" class="form-control" placeholder="Email"
+                                formControlName="email">
+
+                              <!--validation-->
+                              <div class="validation" *ngIf="signupModel.controls['email'].hasError('required')
+                              && (signupModel.controls['email'].touched||signupModel.controls['email'].dirty)">
+                              <b>This Field is requried</b>
+                          </div>
+                          <div class="validation" *ngIf="signupModel.controls['email'].hasError('pattern')">
+                              <b>Invalid email number</b>
+                          </div>    
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block  input-group-lg mybutton"
+                                (click)="randomString()">Generate
+                                OTP</button>
+                        </div>
+
+
+                        <div *ngIf="show_dialog">
+                            <div class="form-group input-group-lg ">
+                                <label for="uotp"></label>
+                                <input type="text" id="uotp" class="form-control" placeholder="Enter OTP"
+                                    formControlName="otp">
+                            </div>
+                            
+                        </div>
+
+
+
+
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <button id="btnSearch" (click)="verifyRecordExists(signupModel.value)"
+                                    [routerLink]="['/setPassword']" class="btn btn-primary btn-md center-block"
+                                    Style="margin-right: 15px"[disabled]="!signupModel.valid">Sign-up</button>
+                                <button id="btnClear" [routerLink]="['/']"
+                                    class="btn btn-danger btn-md center-block">Cancel</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-4"></div>
+    </div>
+
+</div>
+
+
+
+
+

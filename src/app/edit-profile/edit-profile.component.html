@@ -1,0 +1,128 @@
+<!-- <h1 class="text-center">hello</h1> -->
+
+<div class="container-fluid  ">
+        <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                        <form action="" [formGroup]="editModel">
+                                <div class="card image" >
+
+                                        <!-- <nav class="navbar navbar-light bg-light"style="height:100px;width:375px;">
+                                                <span class="navbar-brand ">Navbar</span>
+                                              </nav>  -->
+                                        <div class="card-body">
+                                                <h1 class="text-center"></h1>
+
+                                                <img class="img" src="assets\Avtar.png"
+                                                        class="rounded-circle mx-auto d-block">
+
+
+                                                <div class="form-group input-group-lg">
+                                                        <label for="Name"></label>
+                                                        <input type="text" id="Name" class="form-control myinputcss"
+                                                                placeholder="Name" formControlName="name">
+
+                                                        <div class="validation" *ngIf="editModel.controls['name'].hasError('required')
+                                                        && editModel.controls['name'].touched||editModel.controls['name'].dirty">
+                                                        
+                                                                <b>This field is requried</b>
+                                                        </div>
+
+                                                        
+                                                                
+                                                        
+
+                                                </div>
+                                                <div class="form-group input-group-lg">
+                                                        <label for="Mobileno"></label>
+                                                        <input type="tel" id="Mobileno" class="form-control myinputcss"
+                                                                placeholder="Contact Number" formControlName="mobileno">
+                                                        
+                                                        <div class="validation" *ngIf="editModel.controls['mobileno'].hasError('required')
+                                                        &&( editModel.controls['mobileno'].touched||editModel.controls['mobileno'].dirty)">
+                                                        
+                                                                <b>This field is requried</b>
+
+                                                        </div>
+                                                        <div class="validation" *ngIf="editModel.controls['mobileno'].hasError('pattern')"><b>Invalid MobileNo</b></div>
+                                                                        
+                                                </div>
+                                                <div class="form-group input-group-lg">
+                                                        <label for="Email"></label>
+                                                        <input type="email" id="Email" class="form-control myinputcss"
+                                                                placeholder="Email" formControlName="email">
+
+                                                        <div class="validation" *ngIf="editModel.controls['email'].hasError('required')
+                                                        && (editModel.controls['email'].touched||editModel.controls['email'].dirty)">
+                                                        
+                                                                <b>This field is requried</b>
+
+                                                        </div>
+
+                                                        <div class="validation" *ngIf="editModel.controls['email'].hasError('pattern')"><b>Invalid Email</b></div>
+                                                </div>
+                                                <div class="form-group input-group-lg">
+                                                        <label for="Pincode"></label>
+                                                        <input type="text" id="Pincode" class="form-control myinputcss"
+                                                                placeholder="Pincode" formControlName="pincode">
+
+                                                        <div class="validation" *ngIf="editModel.controls['pincode'].hasError('required')
+                                                        && (editModel.controls['pincode'].touched||editModel.controls['pincode'].dirty)">
+                                                        
+                                                                <b>This field is requried</b>
+
+                                                        </div>
+
+                                                        <div class="validation" *ngIf="editModel.controls['pincode'].hasError('pattern')"><b>Pincode doesn't match</b></div>
+                                                        
+                                                                
+                                                </div>
+                                                <div class="form-group input-group-lg">
+                                                        <label for="Address"></label>
+                                                        <textarea class="form-control myinputcss" rows="3" id="Address"
+                                                                placeholder="Address"
+                                                                formControlName="address"></textarea>
+                                                        
+                                                        <div class="validation" *ngIf="editModel.controls['address'].hasError('required')
+                                                        && (editModel.controls['address'].touched||editModel.controls['address'].dirty)">
+                                                        
+                                                                <b>This field is requried</b>
+
+                                                        </div>
+
+
+                                                </div>
+                                                <div class="form-group">
+                                                        <button type="submit" class="btn btn-primary buttonCancelUpdate"
+                                                                (click)="updateEditProfileAction(editModel.value)"[disabled]="!editModel.valid"
+                                                                style="margin-right:20px">Update</button>
+                                                        <button type="reset"
+                                                                class="btn btn-danger buttonCancelUpdate">Cancel</button>
+                                                </div>
+
+                                                <div class="form-group">
+
+                                                        <button type="submit"
+                                                                class="btn btn-primary  btn-block mybutton" [routerLink]="['/MenuDashboard/changepassword']">Change
+                                                                Password</button>
+                                                </div>
+
+
+                                             
+
+
+                                        </div>
+
+
+                                </div>
+                        </form>
+                </div>
+
+                <div class="col-md-4">
+
+
+
+
+
+                </div>
+        </div>

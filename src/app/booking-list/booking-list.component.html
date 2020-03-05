@@ -1,0 +1,46 @@
+    <div class="table-responsive ">
+
+    <table class="table table-hover table-dark  table-striped image mytable"style="margin-top:80px;margin-left:15px;margin-bottom:600px">
+        <thead>
+          <tr>
+             <th scope="col">BId</th> 
+            <th scope="col">VehicleName</th>
+            <th scope="col">ContactName</th>
+            <th scope="col">ContactDetails</th>
+            <th scope="col">ServiceType</th>
+            <th scope="col">PickupLocation</th>
+            <th scope="col">PickupDate</th>
+            <th scope="col">Budget</th>
+            <th scope="col" >Service Desc.</th>
+            <th scope="col"></th>
+            <th scope="col"></th>            
+            </tr>
+        </thead>
+        
+        <tbody>
+          <tr *ngFor="let b of responseobj">
+            <td>{{b.bid}}</td> 
+            <td>{{b.vechiclename}}</td>
+            <td>{{b.name}}</td>
+            <td>{{b.mobileno}}</td>
+            <td>{{b.servicetype}}</td>
+            <td>{{b.arealocation}}</td>
+            <td>{{b.pickupdate}}</td>
+            <td>{{b.budgetprice}}</td>
+            <td style=" word-wrap: break-word;">{{b.requiredDescription}}</td>
+            <td>
+                <button type="submit" class="btn btn-primary buttonCancelUpdate"
+                                                                (click)="EditBasedOnId(b.bid)"
+                                                                >Edit</button>
+            </td>
+            <td>
+                <button type="submit" class="btn btn-danger buttonCancelUpdate"
+                (click)="updateEditProfileAction(editModel.value)"
+                >Cancel</button>
+            </td>
+           
+        </tr>
+          
+        </tbody>
+        </table>
+    </div>

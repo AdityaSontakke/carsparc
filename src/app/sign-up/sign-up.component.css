@@ -1,0 +1,54 @@
+
+   .input{
+      border-radius: 20px;
+  }
+  
+    .image{
+         
+        background-size:cover;
+        width:auto;
+
+     
+        background-image: url('/assets/background.jpg');
+        
+       
+       
+
+        /* background-position:50% 50%; */
+    }
+    .card{
+        border: 2px solid white;
+        padding: 20px 20px; 
+       
+        margin-top: 80px;
+        margin-bottom: 120px;
+        
+        
+        -webkit-box-shadow: -5px 2px 62px 8px rgba(240,231,240,1);
+        -moz-box-shadow: -5px 2px 62px 8px rgba(240,231,240,1);
+         box-shadow: -5px 2px 62px 8px rgba(240,231,240,1);
+    }
+     .mybutton{
+        border-radius: 30px;
+        padding:15px 10px;
+        margin-top: 30px;
+        display: inline-block;
+        
+    } 
+    
+    #btnSearch,
+#btnClear{
+    
+    vertical-align: top;
+    margin-top:30px;
+    border-radius: 80px; 
+    width: 150px;
+    height: 60px;
+    
+
+}
+
+.validation{
+    color: red;
+}
+    

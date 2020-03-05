@@ -1,0 +1,122 @@
+
+
+
+.mybutton{
+    border-radius: 30px;
+    height: 60px;
+    width: 400px;   
+}
+
+.image{
+    /* height:40em;  */
+    background-size:cover;
+    width:auto;
+    background-image: url('/assets/background.jpg');
+
+   
+    background-position:50% 50%;
+    
+
+  /* Center and scale the image nicely  */
+ 
+  background-repeat: no-repeat;
+   /* height: 550px; */
+     /* padding: 40px 35px; */
+     /* margin-left:400px;   */
+   
+
+}
+label{
+    font-size: 15px;
+    color:wheat;
+}
+
+#log{
+    border: 2px solid white;
+    height: 550px;
+     padding: 40px 35px;
+     /* margin-left:400px;   */
+     width: 400px;
+
+
+
+
+ 
+
+   
+
+
+
+     
+    /* -webkit-box-shadow: -5px 2px 62px 8px rgba(0,0,0,0.75);
+-moz-box-shadow: -5px 2px 62px 8px rgba(0,0,0,0.75);
+box-shadow: -5px 2px 62px 8px rgba(0,0,0,0.75); */
+-webkit-box-shadow: -5px 2px 62px 8px rgba(240,231,240,1);
+-moz-box-shadow: -5px 2px 62px 8px rgba(240,231,240,1);
+box-shadow: -5px 2px 62px 8px rgba(240,231,240,1);
+    
+
+
+    /* -webkit-box-shadow: -5px 2px 62px 8px rgba(240,231,240,1);
+        -moz-box-shadow: -5px 2px 62px 8px rgba(240,231,240,1);
+         box-shadow: -5px 2px 62px 8px rgba(240,231,240,1); */
+
+               
+         /* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.67);
+         -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.67);
+         -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.67); */
+         box-shadow: -10px 3px 28px 10px white;
+-webkit-box-shadow: -10px 3px 28px 10px white;
+-moz-box-shadow: -10px 3px 28px 10px  white;
+        
+                   
+} 
+
+img{
+    width:100px;
+    margin:auto;
+
+
+}
+
+button{
+   
+    /* margin-right:200px; */
+    -webkit-box-shadow: -5px 2px 62px 8px rgba(240,231,240,1);
+    -moz-box-shadow: -5px 2px 62px 8px rgba(240,231,240,1);
+    box-shadow: -5px 2px 62px 8px rgba(240,231,240,1);
+    
+   
+}
+
+
+container{
+    padding: 25px 25px;
+   
+}  
+.card{
+    border: 2px solid white;
+    /* padding: 20px 20px;  */
+   
+    margin-top: 80px;
+    padding-bottom: 90px;
+    /* margin-bottom: 100px;
+     */
+    
+    -webkit-box-shadow: -5px 2px 62px 8px rgba(240,231,240,1);
+    -moz-box-shadow: -5px 2px 62px 8px rgba(240,231,240,1);
+     box-shadow: -5px 2px 62px 8px rgba(240,231,240,1);
+} 
+  
+
+  
+
+     
+   
+
+
+
+
+
+
+

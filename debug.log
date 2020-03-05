@@ -1,0 +1,16 @@
+[1210/002559.353:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[1210/103508.176:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[1210/111207.938:ERROR:file_io.cc(134)] WriteFile: The pipe is being closed. (0xE8)
+[1210/112007.243:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[1210/113427.074:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[1210/114326.853:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[1210/114528.212:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[1210/114727.962:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[1210/114728.187:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[1210/114828.201:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[1210/115227.847:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[1210/115427.575:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[1210/115427.714:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[1210/115527.964:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[1210/115528.126:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[1213/163426.572:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0

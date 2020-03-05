@@ -1,0 +1,80 @@
+<!-- <img src="assets/background.jpg"  alt="Logo" >  -->
+
+<div class="jumbotron container-fliud image">
+
+    <div class="row">
+        <div class="col-sm-4 col-md-4 col-xs-4"></div>
+        <div class="col-sm-4 col-md-4 col-xs-4">
+    <form  [formGroup]="loginModel">
+
+        <div class="card image1" >
+            <div class="card-body">
+                <img class="img" src="assets\logo.png" class="rounded-circle mx-auto d-block">
+                <h1 style="color: white">Login</h1>
+
+                <div class="form-group input-group-lg">
+                    <label for="uname"></label>
+                    <input type="text" id="uname" class="form-control" placeholder="Mobile" formControlName="mobileno">
+
+                     <div class="validation" *ngIf="loginModel.controls['mobileno'].hasError('required')
+                        && (loginModel.controls['mobileno'].touched||loginModel.controls['mobileno'].dirty)">
+                        <b>This Field is requried</b>
+                    </div>
+                    <div class="validation" *ngIf="loginModel.controls['mobileno'].hasError('pattern')">
+                        <b>Invalid contact number</b>
+                    </div> 
+                </div>
+                
+
+            
+                    <div class="form-group input-group-lg">
+                        <label for="password"></label>
+                        <input type="password" id="password" class="form-control" placeholder="Password"
+                            formControlName="password">
+                        <div class="validation" *ngIf="loginModel.controls['password'].hasError('required')
+                    && (loginModel.controls['password'].touched||loginModel.controls['password'].dirty)">
+                            <b>This Field is requried</b>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Remember Me</label>
+                        <a href="ForgotPassword" style="margin-left: 20px">Forget password</a>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <!-- <div class="button_group" style="justify-content: center"> -->
+                        <div class="button_group">
+                            <button type="submit" [routerLink]="['/MenuDashboard']" class="btn  btn-sm btn-success"
+                                style="margin-right: 25px" (click)="loginVerify(loginModel.value)"[disabled]="!loginModel.valid">Login</button>
+                            <!-- [disabled]="!loginModel.valid" -->
+                            <button type="reset" [routerLink]="['/']" class="btn btn-sm btn-danger">Cancel</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3"></div>
+                    <div class="form-group">
+                        <span style="margin-right: 25px;">Don't have an account
+                            <a href="UserserviceButtons" style="margin-left: 12px;">Sign-up here</a></span>
+
+                    </div>
+            </div>
+            </div>
+            </form>
+
+
+
+
+        </div>
+        <div class="col-sm-4 col-md-4 col-xs-4"></div>
+
+    </div>
+</div>
